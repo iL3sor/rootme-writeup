@@ -47,7 +47,7 @@
     Giải thích payload:
     - Phần ```</h1>``` là để bypass thẻ ```<h1>``` sẵn có của DOM mà ta inject
     - Thẻ img em áp dụng Dangling Markup, phải sử dụng Single Quote thay vì Double Quote vì ta mong muốn đọc được nội dung đến dấu ' tiếp theo (chỗ icon) chứ không phải dấu " tiếp theo -> Nhằm mục đích đọc được đoạn có chứa Flag
-    Kết quả như sau
+    - Kết quả như sau
 
     ![2-6](img/2-6.jpg)
 
