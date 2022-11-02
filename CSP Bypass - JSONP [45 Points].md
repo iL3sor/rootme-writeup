@@ -6,19 +6,19 @@
 
 - Challenge cung cấp cho ta trang web như sau
 
-  ![3](F:\VCS_practice\rootme\img\3.jpg)
+  ![3](img/3.jpg)
 
 -  Thử payload Reflect XSS ta thấy nó không thực thi được do CSP
 
-  ![3-3](F:\VCS_practice\rootme\img\3-3.jpg)
+  ![3-3](img/3-3.jpg)
 
 - Vì đề là CSP Bypass nên ta sẽ kiểm tra Content Security Policy của trang này là gì
 
-  ![3-1](F:\VCS_practice\rootme\img\3-1.jpg)
+  ![3-1](img/3-1.jpg)
 
 - Kiểm tra  trên trang CSP Evaluator ta thấy có 1 vị trí có thể khai thác
 
-  ![3-2](F:\VCS_practice\rootme\img\3-2.jpg)
+  ![3-2](img/3-2.jpg)
 
 - Default - src là chỉ thị mặc định khi các chỉ thị khác bị thiếu, ở đây nó có nội dung là
 
@@ -32,7 +32,7 @@
 
 - Tìm hiểu khái niệm JSONP ta có kết quả như sau
 
-  ![3-5](F:\VCS_practice\rootme\img\3-5.jpg)
+  ![3-5](img/3-5.jpg)
 
 - Truyền dữ liệu giữa các domain khác nhau sẽ gặp lỗi Cross-domain, nhưng truyền script thì không. JSONP tận dụng lợi ích của điều này để truyền dữ liệu. Cụ thể nó sẽ truyền script qua bên nhận và bên nhận tự thực thi script đó để lấy dữ liệu.
 
@@ -40,7 +40,7 @@
 
 - Thử tìm kiếm ta thấy có một trang của google cho phép tạo jsonp theo mong muốn.
 
-  ![3-4](F:\VCS_practice\rootme\img\3-4.jpg)
+  ![3-4](img/3-4.jpg)
 
 - Đặt script mong  muốn của ta vào nội dung tham số callback => Ta đã có được source script để inject
 
@@ -50,7 +50,7 @@
 
 - Kết quả
 
-  ![3-6](F:\VCS_practice\rootme\img\3-6.jpg)
+  ![3-6](img/3-6.jpg)
 
   ```diff
   - Flag: CSP_4ND_JS0NP_ENDPOINT_B4D_ID3A
