@@ -12,7 +12,7 @@
 
     ![2-1](img/2-1.jpg)
 
-  - Thử với payload ```Reflect XSS``` đơn giản ta thấy nó bị chặn bởi **Content Security Policy**
+  - Thử với payload ```Reflect XSS``` đơn giản để kiểm tra xem có fillter gì không, và ta thấy nó bị chặn bởi **Content Security Policy**
 
     ![2-2](img/2-2.jpg)
 
@@ -28,7 +28,7 @@
 
     ![2-5](img/2-5.jpg)
 
-  - Tới đây, dựa vào tiêu đề và gợi ý trên, ta có thể biết rằng đây là DOM-Based XSS dựa vào kỹ thuật *Dangling Markup* . Sau khi search google về kỹ thuật này, ta có thể thấy nó được mô tả chi tiết ở [đây](https://portswigger.net/web-security/cross-site-scripting/dangling-markup) gồm cả khái niệm và cách khai thác.
+  - Tới đây, dựa vào tên tiêu đề Challenge và gợi ý trên, ta có thể đoán rằng đây là DOM-Based XSS dựa vào kỹ thuật *Dangling Markup* . Sau khi search google về kỹ thuật này, ta có thể thấy nó được mô tả chi tiết ở [đây](https://portswigger.net/web-security/cross-site-scripting/dangling-markup) gồm cả khái niệm và cách khai thác.
 
   - Cụ thể, *Dangling markup* là khi attacker chèn 1 thẻ html vào DOM mà không đóng các attribute của thẻ đó lại, để nó 'treo lủng lẳng' như sau:
 
@@ -53,17 +53,11 @@
 
   - Vào phần ***fill in this form*** và gửi link vulnerable trên đến con bot, khi nó mở đường link thì thẻ ```img``` sẽ tự động gửi request tới webhook của chúng ta, kèm theo chuỗi html đằng sau. Nhờ đó ta có thể thấy được đoạn html chứa flag mà bot thấy được.
 
-  - Tuy nhiên, đợi 10p vẫn không thấy request tới, em đã kiểm tra lại và thấy thuộc tính ```src``` không nhận ký tự xuống dòng 
+  - Tuy nhiên, đợi 10p vẫn không thấy request tới, sau khi tìm hiểu mãi không biết được nguyên nhân, em đoán là server đã lọc kí tự img hay src gì đó  
 
-    ![2-7](img/2-7.jpg)
-
-  - Em đã tìm kiếm xem còn thuộc tính nào tự động gửi request tương tự src không, thì tìm thấy được thuộc tính background trong table
+  - Em đã thử tìm kiếm xem còn thuộc tính nào tự động gửi request lấy image tương tự src không, thì tìm thấy được thuộc tính background trong table
 
     ![2-8](img/2-8.jpg)
-
-  - Test thử và thấy nó nhận cả các ký tự xuống dòng làm đường dẫn
-
-    ![2-9](img/2-9.jpg)
 
   - Cuối cùng ta gửi payload lại và nhận được flag như ta tính.
 
