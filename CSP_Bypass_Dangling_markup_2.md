@@ -4,7 +4,7 @@
 
 ## 2. CSP Bypass -  Dangling markup 2 [50 Points]
 
-  - Cũng như challenge trên, ta có trang web như sau
+  - Truy cập challenge ta có trang web như sau
 
     ![2](img/2.jpg)
 
