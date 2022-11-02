@@ -1,5 +1,5 @@
 ```diff  
- Web -  Client Challenges 
+-  Web -  Client Challenges 
 ```
 
 ## 2. CSP Bypass -  Dangling markup 2 [50 Points]
