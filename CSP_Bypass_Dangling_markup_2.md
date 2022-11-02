@@ -6,11 +6,11 @@
 
 - Cũng như challenge trên, ta có trang web như sau
 
-  ![2](img\2.jpg)
+  ![2](img/2.jpg)
 
   - Trang web sẽ hiện thị ra dòng chữ **Welcome** cùng với các ký tự mà ta nhập vào
 
-    ![2-1](F:\VCS_practice\rootme\img\2-1.jpg)
+    ![2-1](img/2-1.jpg)
 
   - Thử với payload ```Reflect XSS``` đơn giản ta thấy nó bị chặn bởi **Content Security Policy**
 
