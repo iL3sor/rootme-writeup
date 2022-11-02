@@ -6,7 +6,7 @@
 
 - Cũng như challenge trên, ta có trang web như sau
 
-  ![2](F:\VCS_practice\rootme\img\2.jpg)
+  ![2](img\2.jpg)
 
   - Trang web sẽ hiện thị ra dòng chữ **Welcome** cùng với các ký tự mà ta nhập vào
 
