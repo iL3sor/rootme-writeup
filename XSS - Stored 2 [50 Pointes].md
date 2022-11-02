@@ -28,7 +28,7 @@
 
   ![1-6](img/1-6.jpg)
 
-- Đọc source code ta thấy cần bybass chỗ này với ký tự ```">``` ta có thể thực thi script ở đây![1-7](F:\VCS_practice\rootme\img\1-7.jpg)
+- Đọc source code ta thấy cần bybass chỗ này với ký tự ```">``` ta có thể thực thi script ở đây![1-7](img/1-7.jpg)
 
 - Sửa lại payload cho chỗ này như sau để có thể lấy được cookie 
 
