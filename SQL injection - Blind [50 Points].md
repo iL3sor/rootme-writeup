@@ -22,9 +22,7 @@
 
   ![5-3](F:\VCS_practice\rootme\img\5-3.jpg)
 
-  Và kết quả là table_name = users
-
-  ![5-4](F:\VCS_practice\rootme\img\5-4.jpg)
+  Và kết quả là table_name = ```users```
 
 * Thay vì brute-force tên các cột, em đoán xem cột username và password có tồn tại hay không với payload ```user1' AND SUBSTR((SELECT password from users where username='admin') ,1,1) == 'u' -- ```, ta thấy request ok (Khi không có lỗi sqlite nào pop up ra).
 
@@ -33,3 +31,5 @@
   ![5-5](F:\VCS_practice\rootme\img\5-5.jpg)
 
 * Kết quả ta thu được password, dùng nó để pass challenge
+
+  ![5-6](F:\VCS_practice\rootme\img\5-6.jpg)
