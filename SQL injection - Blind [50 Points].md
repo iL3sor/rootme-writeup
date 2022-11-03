@@ -32,4 +32,4 @@
 
 * Kết quả ta thu được password, dùng nó để pass challenge
 
-  ![5-6](F:\VCS_practice\rootme\img\5-6.jpg)
+  ![5-6](img/5-6.jpg)
