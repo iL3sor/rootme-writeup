@@ -1,5 +1,5 @@
 ```diff
-@@ Web-server Challenge
+@@ Web-server Challenge @@
 ```
 
 ## SQL injection - Time based [45 Points]
@@ -26,7 +26,7 @@
 
 * Thu được kết quả table_name = ```users``` 
 
-  ![6-5](F:\VCS_practice\rootme\img\6-5.jpg)
+  ![6-5](img/6-5.jpg)
 
 * Và thu được các column như hình trên (và còn nữa, nhưng nhiều quá nên em đã ngắt script tại đây)
 
