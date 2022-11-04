@@ -34,7 +34,7 @@
 
 * Và kết quả là 
 
-  ![7-6](IMG/7-6.jpg)
+  ![7-6](img/7-6.jpg)
 
 * Thử dùng LIMIT 1 để bypass chỗ này, ta thấy truy vấn thành công
 
