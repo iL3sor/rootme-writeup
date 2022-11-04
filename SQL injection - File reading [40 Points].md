@@ -48,7 +48,7 @@
 
   ![8-8](img/8-8.jpg)
 
-* Vì server filter cái dấu nháy đơn và nháy kép, nên ta sẽ truyền bằng mã hex, tên file muốn đọc là index.php tương đương với hex là ```0x2e2f696e6465782e706870```.Thử đọc file ta có kết quả sau
+* Vì server filter cái dấu nháy đơn và nháy kép, nên ta sẽ truyền bằng mã hex, tên file muốn đọc là /challenge/web-serveur/ch31/index.php tương đương với hex là ```0x2f6368616c6c656e67652f7765622d736572766575722f636833312f696e6465782e706870```.Thử đọc file ta có kết quả sau
 
   ```2 union select 1,2, 3,LOAD_FILE(0x2f6368616c6c656e67652f7765622d736572766575722f636833312f696e6465782e706870)--```
 
