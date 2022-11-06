@@ -14,7 +14,7 @@
   * **select** = > thay thế bằng **SELECT**
   * **union** = > thay thế bằng **UNION**
   * **join** = >  thay thế bằng **JOIN**
-  * **select  1,2 (filter dấu , )** = > thay thế bằng **(SELECT 1) AS A JOIN (SELECT 2) AS B ** (Nếu không có alias cho sub-query sẽ bị lỗi *Every derived table must have its own alias*)
+  * **select  1,2 (filter dấu , )** = > thay thế bằng **(SELECT 1) AS A JOIN (SELECT 2) AS B** (Nếu không có alias cho sub-query sẽ bị lỗi *Every derived table must have its own alias*)
   * **where** = > Thay thế bằng **limit** và **offset** 
 
 * Ta có được hint từ source như sau
