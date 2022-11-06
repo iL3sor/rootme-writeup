@@ -1,5 +1,5 @@
 ```diff
-@@ Web - Server Challenge
+@@ Web - Server Challenge @@
 ```
 
 ## XSS DOM Based - Filters Bypass [50 Points]
