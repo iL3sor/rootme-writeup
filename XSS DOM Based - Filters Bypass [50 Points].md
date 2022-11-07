@@ -24,7 +24,7 @@
 
   ![15-2](img/15-2.jpg)
 
-- Tìm kiếm thêm ta thấy dấu ```+``` và dấu ```;``` cũng bị loại bỏ đi. Tuy nhiên còn một dấu ```/``` hữu ích thì vẫn được accept
+- Tìm kiếm thêm ta thấy dấu ```/``` vẫn được accept
 
 - Nguyên đoạn code dòng đó sẽ là
 
